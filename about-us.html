@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  	<meta charset="utf-8">
+  	<script src="script.js"></script>
+  	<meta name="viewport" content="width=device-width">
+  	<link href="style.css" rel="stylesheet" type="text/css" />
+	<title>About Us | Batyr 2.0</title>
+	<link rel="stylesheet" href="https://use.typekit.net/fnr2gwe.css">
+	<link rel="stylesheet" href="Just Dream/stylesheet.css">
+	<link rel="icon" href="img/favicon.png">
+</head>
+
+<body>
+	<div id="mailWarning">
+		<div class="title">Wait!</div>
+		<div class="close" onclick="closeMailWarning()">x</div>
+		<div id="warningText">This link is going to take you to a new email on another website! Continue?</div>
+		<div class="continue"><a href="mailto:hello@batyr.com.au">Continue</a></div>
+	</div>
+	<section id="main">
+  		<nav>
+    		<div class="hl-container">
+      			<a href="./index.html"  class="header-logo">
+        			<img src="./img/logo-white@2x.png" class="hl-img">
+      			</a>
+    		</div>
+			<div class="right">
+				<div class="dropdown">
+      				<button class="dropbtn">About Us ▾</button>
+      				<div class="dropdown-content">
+        				<a href="#whatis" class="nav-dc">What is batyr?</a>
+        				<a href="#whydo" class="nav-dc">What is our purpose?</a>
+        				<a href="#whatdo" class="nav-dc">What do we do?</a>
+      				</div>
+    			</div>
+				<div class="dropdown">
+      				<button class="dropbtn">Get Involved ▾</button>
+      				<div class="dropdown-content">
+        				<a href="fundraise.html" class="nav-dc">Fundraise for batyr</a>
+        				<a href="fundraise.html#contactus" class="nav-dc">Contact Us</a>
+        				<a href="#" class="nav-dc" onclick="mailButton()">hello@batyr.com.au</a>
+      				</div>
+    			</div>
+			</div>
+  		</nav>
+		<section id="therest" class="clearfix">
+			<div class="info-wrap">
+				<div class="info-text-wrap">
+					<div id="whatis" class="title">What is batyr?</div>
+					<div class="text">batyr is a mental health organisation which runs programs with teenagers and university students to prevent mental health problems and illnesses such as depression.</div>
+				</div>
+				<img class="info-img" src="./img/what-we-do-image@2x.png">
+			</div>
+			<div class="clearfix iw2">
+				<div class="info-wrap">
+					<div class="info-text-wrap">
+						<div id="whydo" class="title">Why do we exist?</div>
+						<div class="text">Of every 30 students in Australia, seven will be dealing with a mental health issue, yet only two will reach out for support, leaving five suffering in silence. <br><br>Sadly, most young people dealing with mental health issues do not reach out for help, largely due to stigma.</div>
+					</div>
+					<img class="info-img" src="./img/why-we-exist-image@2x.png">
+				</div>
+			</div>
+			<div class="info-wrap">
+				<div class="info-text-wrap">
+					<div id="whatdo" class="title">What do we do?</div>
+					<div class="text">We smash the stigma surrounding mental ill-health and empower young people to reach out for support. <br><br>We help create communities that support young people’s mental health and wellbeing.</div>
+				</div>
+				<img class="info-img" src="./img/how-we-do-it-image@2x.png">
+			</div>
+
+		</section>
+	</section>
+</body>
+
+</html>

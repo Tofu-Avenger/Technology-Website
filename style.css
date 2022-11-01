@@ -1,0 +1,392 @@
+html, body {
+  	height: 100%;
+  	width: 100%;
+	margin: 0px;
+	background-color: #00a5de;
+	transition-duration: 1s;
+}
+
+@font-face{
+	font-family: 'MyWebFont';
+	src: url('Just Dream/justadream.eot');
+	src: url('Just Dream/justadream.eot?#iefix') format('embedded-opentype'),
+	url('Just Dream/justadream.woff') format('woff'),
+	url('Just Dream/justadeam.ttf') format('truetype'),
+	url('Just Dream/justadream.svg#webfont') format('svg');
+}
+
+.featured {
+	display: inline-block;
+	margin: 25px;
+	margin-bottom: 50px;
+}
+
+a {
+	color: unset;
+	text-decoration: none;
+}
+
+.contactus {
+	margin: auto;
+	background-image: url('img/ContactUs.png');
+	width: 695px;
+	height: 760px;
+	text-align: center;
+}
+
+.contactus .title {
+	margin: 20px;
+	float: none;
+	font-size: 55px;
+	text-align: none;
+	width: unset;
+	display: inline-block;
+	padding: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	color: white;
+	font-family: justdream, sans-serif;
+}
+
+.contactus .text {
+	float: none;
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: unset;
+	font-family: sans-serif;
+}
+
+.contactus table {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+
+.contactus input {
+	width: 428px;
+	height: 13px;
+	padding: 10px;
+	padding-right: 8px;
+	padding-left: 8px;
+	margin-top: 15px;
+	border: none;
+}
+
+input {
+	font-family: sans-serif;
+}
+
+.contactus input[type="submit"] {
+	height: unset;
+	width: 150px;
+}
+
+.contactus textarea {
+	width: 430px;
+	height: 50px;
+	padding: 10px;
+	padding-right: 8px;
+	padding-left: 8px;
+	margin-top: 15px;
+	border: none;
+}
+
+.slogan {
+	font-family: justdream,sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	color: #fffdf5;
+	font-size: 40px;
+}
+
+.tn-container {
+	margin: 50px auto 50px auto;
+	height: 400px;
+}
+
+.thumbnail {
+	margin: 15px;
+	display: inline-block;
+	width: 336px;
+	transition-duration: 0.5s;
+	background-color: white;
+	padding: 25px 25px 8px 25px;
+	border-radius: 20px;
+	text-align: center;
+	transform: scale(1);
+}
+
+#thumbnail3 {
+	right: 150px;
+}
+
+td:hover .thumbnail {
+	transform: scale(1.1);
+	transition-duration: 0.5s;
+	box-shadow: 0px 7px 7px 7px rgba(0,0,0,0.2);
+}
+
+.tn-title {
+	font-family: quicksand,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 20px;
+	color: #003462;
+}
+
+.thumbnail img {
+	border-radius: 15px;
+}
+
+textarea {
+	resize: none;
+	font-family: sans-serif;
+}
+
+.popupcontainer {
+	position: relative;
+	text-align: center;
+	min-height: 250px;
+}
+
+.iw2 .text {
+	float: left;
+	text-align: left;
+}
+
+#warningText {
+	margin: 20px;
+	margin-top: 0px;
+	color: #003446;
+}
+
+.continue {
+	display: table-row;
+    vertical-align: bottom;
+    height: 1px;
+	padding: 10px;
+}
+
+.continue a {
+	float: right;
+	padding: 30px;
+}
+
+#main {
+	height: 100%;
+	background-color: #00a5de;
+}
+
+#mailWarning {
+	display: none;
+	z-index: 10;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	background-color: white;
+	width: 500px;
+	height: 250px;
+	border-radius: 20px;
+	border-collapse: collapse;
+}
+
+.close {
+	float: right;
+	margin: 10px;
+	background-color: #00a5de;
+	color: white;
+	border-radius: 20px;
+	border: none;
+	padding: 5px;
+	font-size: 20px;
+	line-height: 0.4;
+	height: 13px;
+	width: 13px;
+	font-family: komet-sc,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	cursor: pointer;
+	text-align: center;
+}
+
+#mailWarning .title {
+	margin: 20px;
+	background-color: #00a5de;
+	border-radius: 20px;
+	float: none;
+	font-size: 30px;
+	text-align: none;
+	width: unset;
+	display: inline-block;
+	padding: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.clearfix {
+	overflow: auto;
+	background-color: #003462;
+}
+
+.iw2 {
+	margin-top: 500px;
+}
+
+.iw2 .title {
+	color: #ef4945;
+	float: left;
+	margin-left: 0px;
+}
+
+.iw2 .info-text-wrap {
+	float: left;
+	margin-right: 11px;
+}
+
+.iw2 .info-img {
+	float: right;
+	margin-bottom: 90px;
+}
+
+#therest {
+	padding-top: 182px;
+	text-align: center;
+	background-color: #00a5de;
+	height: 100%;
+}
+
+.info-wrap {
+	padding: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+
+.info-text-wrap {
+	float: right;
+	width: 50%;
+	align-items: center;
+}
+
+.text {
+	float: right;
+	color: #fffdf5;
+	text-align: right;
+	font-size: 20px;
+}
+
+.ib {
+	display: inline-block;
+}
+
+.info-img {
+	max-width: 489px;
+	float: left;
+	margin-bottom: 80px;
+}
+
+.title {
+	text-align: center;
+	font-family: justdream,sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	color: #fffdf5;
+	font-size: 50px;
+	margin: 5px;
+	margin-right: 0px;
+	float: right;
+}
+
+nav {
+	background-color: #003462;
+	display: flex;
+	align-items: center;
+	padding: 0px;
+	margin: 0px;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+
+.hl-img {
+  width: 56px;
+}
+
+.hl-container {
+  padding: 35px;
+  height: 62px;
+  width: 62px;
+  margin: 0px;
+  display: inline-block;
+}
+
+.header-logo:hover {
+  	filter: brightness(90%);
+}
+
+.logo {
+	width: 150px;
+}
+
+.right {
+	float: right;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  	display: inline-block;
+	margin: 10px;
+}
+
+.dropbtn {
+  	display: inline-block;
+	background-color: #fffdf5;
+	border-radius: 5px 5px 5px 5px;
+	border: none;
+	font-family: quicksand,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 15px;
+	color: #003462;
+	padding: 7px 15px;
+	width: 100%;
+	min-width: 125px;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #f6f4ef;
+  	filter: brightness(100%);
+	border-radius: 5px 5px 0px 0px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	background-color: #f6f4ef;
+  	min-width: 120px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 3;
+	min-width: 125px;
+	border-radius: 0px 5px 5px 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  	color: black;
+  	padding: 12px 12px;
+  	text-decoration: none;
+  	display: block;
+  	border-radius: 5px;;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #efede6;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}

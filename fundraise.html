@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<script src="script.js"></script>
+	<meta name="viewport" content="width=device-width">
+	<link href="flipper.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.typekit.net/fnr2gwe.css">
+	<link rel="stylesheet" href="Just Dream/stylesheet.css">
+	<link rel="icon" href="img/favicon.png">
+</head>
+
+<body>
+	<div id="mailWarning">
+		<div class="title">Wait!</div>
+		<div class="close" onclick="closeMailWarning()">x</div>
+		<div id="warningText">This link is going to take you to a new email on another website! Continue?</div>
+		<div class="continue"><a href="mailto:hello@batyr.com.au">Continue</a></div>
+	</div>
+	<section id="main">
+	    <nav>
+		    <div class="hl-container">
+			    <a href="./index.html"  class="header-logo">
+				    <img src="./img/logo-white@2x.png" class="hl-img">
+			    </a>
+		    </div>
+		    <div class="right">
+			    <div class="dropdown">
+				    <button class="dropbtn">About Us ▾</button>
+				    <div class="dropdown-content">
+					    <a href="about-us.html#whatis" class="nav-dc">What is batyr?</a>
+					    <a href="about-us.html#whydo" class="nav-dc">What is our purpose?</a>
+					    <a href="about-us.html#whatdo" class="nav-dc">What do we do?</a>
+				    </div>
+			    </div>
+			    <div class="dropdown">
+				    <button class="dropbtn">Get Involved ▾</button>
+				    <div class="dropdown-content">
+					    <a href="fundraise.html" class="nav-dc">Fundraise for batyr</a>
+					    <a href="fundraise.html#contactus" class="nav-dc">Contact Us</a>
+					    <a href="#" class="nav-dc" onclick="mailButton()">hello@batyr.com.au</a>
+				    </div>
+			    </div>
+		    </div>
+	    </nav>
+	    <section id="therest">
+			<div></div>
+			<table style="margin-left: auto; margin-right: auto;"><tr>
+				<td><div class="flipper-con featured"><div class="flipper">
+					<div class="front"><a class="" href="https://www.muteformentalhealth.com.au">
+						<div class="feat-title">Go On Mute</div>
+						<div class="feat-img" style="background-image: url('./img/gomute.png');"></div>
+					</a></div>
+					<div class="back"><a class="" href="https://www.muteformentalhealth.com.au" target="_blank">
+						<p class="feat-desc" style="font-size: 17px;">Go On Mute, and be a silent hero for young Aussies! Take part in a sponsored silence anytime during mental health month this October.</p>
+					</a></div>
+				</div></div></td>
+				<td><div class="flipper-con featured"><div class="flipper">
+					<div class="front"><a class="" href="https://splashthestigma.com.au">
+						<div class="feat-title">Splash the Stigma 2022</div>
+						<div class="feat-img" style="background-image: url('img/splashthestigma.jpeg');"></div>
+					</a></div>
+					<div class="back"><a class="" href="https://splashthestigma.com.au" target="_blank">
+						<p class="feat-desc">Get involved and help us turn the tide on youth mental health!</p>
+					</a></div>
+				</div></div></td>
+				<td><div class="flipper-con featured"><div class="flipper">
+					<div class="front"><a class="" href="https://canberramarathon23.grassrootz.com/batyr">
+						<div class="feat-title">The Canberra Times Running Festival</div>
+						<div class="feat-img" style="background-image: url('img/canberratimesrunning.jpeg');"></div>
+					</a></div>
+					<div class="back"><a class="" href="https://canberramarathon23.grassrootz.com/batyr" target="_blank">
+						<p class="feat-desc">Join us on Sunday April 16th as we take on Canberra's fast and scenic course.</p>
+					</a></div>
+				</div></div></td>
+			</tr></table>
+            <div class="contactus" id="contactus">
+				<div class="title">Send Us Your Message</div>
+				<div class="text">Would you like to get involved? Would you like to send feedback? Or would you just like to send us a message? We'd love to hear from you!<br>Enter your information here to contact us!</div>
+					<form>
+						<table>
+							<tr>
+								<td><input type="text" name="fname"  placeholder="First Name"></td>
+							</tr>
+							<tr>
+								<td><input type="text" name="lname"  placeholder="Last Name"></td>
+							</tr>
+							<tr>
+								<td><input type="text" name="email" placeholder="Your Email"></td>
+							</tr>
+							<tr>
+								<td><input type="text" name="ph" placeholder="Phone Number"></td>
+							</tr>
+							<tr>
+								<td><textarea placeholder="Your message" name="message"></textarea></td>
+							</tr>
+							<tr>
+								<td><input type="submit" value="Send your message"></td>
+							</tr>
+						</table>			
+					</form>
+				</div>
+			</div>
+	    </section>
+	</section>
+</body>
+</html>

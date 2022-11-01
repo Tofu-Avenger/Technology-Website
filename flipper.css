@@ -1,0 +1,75 @@
+.flipper-con {
+    position: relative;
+    height: 156.75px;
+    width: 300px;
+}
+
+.flipper {
+    display: grid;
+}
+
+.flipper-con .front, .flipper .back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: 0.6s; transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 156.75px;
+    overflow:auto;
+    grid-row: 1;
+    grid-column: 1;
+    border-radius: 10px;
+}
+
+.flipper-con .front {
+    background-color: #003462;
+    color: white;
+    font-family: montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    font-style: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.flipper-con .front .feat-img {
+    filter: brightness(70%);
+    width: 300px;
+    height: 156.75px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.flipper-con .front .feat-title {
+    position: relative;
+    z-index: 1;
+    padding: 25px;
+}
+
+.flipper-con .back {
+    background-color: #2b7de1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.flipper-con .back .feat-desc {
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.flipper-con .front, .flipper-con:hover .back {
+    transform: rotateY(0deg);
+}
+
+.flipper-con:hover .front, .flipper-con .back {
+    transform: rotateY(180deg);
+}

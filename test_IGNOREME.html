@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<script src="script.js"></script>
+	<meta name="viewport" content="width=device-width">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="flipper.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.typekit.net/fnr2gwe.css">
+</head>
+
+<body>
+	<div id="mailWarning">
+		<div class="title">Wait!</div>
+		<div class="close" onclick="closeMailWarning()">x</div>
+		<div id="warningText">This link is going to take you to a new email on another website! Continue?</div>
+		<div class="continue"><a href="mailto:hello@batyr.com.au">Continue</a></div>
+	</div>
+	<div id="contactus">
+		<div class="popupcontainer">
+			<div class="title">Send Us Your Message</div>
+			<div class="close" onclick="closeContactUs()">x</div>
+			<form>
+				<table>
+					<tr>
+						<td><input type="text" name="fname"  placeholder="First Name"></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="fname"  placeholder="Last Name"></td>
+					</tr>
+					<tr>
+						<td><textarea placeholder="Your message" name="message"></textarea></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="Send your message"></td>
+					</tr>
+				</table>			
+			</form>
+		</div>
+	</div>
+	<section id="main">
+	    <section id="therest">
+            <div style="background-color: blue; position: sticky; margin-bottom: 300px;">hi!</div>
+            <img src="img/ContactUs.png">
+
+			<div class="flip-container image-tile image-tile--text-yes image-tile--size-rectangle">
+				<div class="flipper">
+					<div class="front">
+						<div class="image-tile__image" style="background-image: url(&quot;https://raisely-images.imgix.net/shut-up-boss-2022/uploads/3324-gom-item-1-website-banner-1200-x-627-px-v-4-3324-gom-item-1-website-banner-1200-x-627-px-m-f-1-png-4befca.png?w=400&quot;);"></div>
+						<a class="image-tile__link" href="https://www.muteformentalhealth.com.au"><div class="image-tile__text">Go On Mute </div></a>
+					</div>
+					<div class="back">
+						<p>Go On Mute, and be a silent hero for young Aussies! Take part in a sponsored silence anytime during mental health month this October.</p>
+						<a class="image-tile__link" href="https://www.muteformentalhealth.com.au" target="_blank" rel="noopener noreferrer"></a>
+					</div>
+				</div>
+			</div>
+			<button onclick="numbers();">Hiiiiii</button>
+			<div id="number">0</div>
+			<script type="text/javascript">
+				var number = 0;
+				const numberElement = document.getElementById("number");
+				
+				function numbers() {
+					number = 0
+					while (number <= 99999) {
+						numberElement.innerHTML = `${number}`
+						setTimeout(() => {number ++;}, 1000)
+					}
+				}
+			</script>
+	    </section>
+	</section>
+</body>
+</html>

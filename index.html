@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<script src="script.js"></script>
+	<meta name="viewport" content="width=device-width">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="Just Dream/stylesheet.css">
+  	<link rel="stylesheet" href="https://use.typekit.net/fnr2gwe.css">
+	<link rel="icon" href="img/favicon.png">
+</head>
+
+<body>
+	<div id="mailWarning">
+		<div class="title">Wait!</div>
+		<div class="close" onclick="closeMailWarning()">x</div>
+		<div id="warningText">This link is going to take you to a new email on another website! Continue?</div>
+		<div class="continue"><a href="mailto:hello@batyr.com.au">Continue</a></div>
+	</div>
+	<section id="main">
+		<nav>
+			<div class="hl-container">
+				<a href="./index.html"  class="header-logo">
+					<img src="./img/logo-white@2x.png" class="hl-img">
+				</a>
+			</div>
+			<div class="right">
+				<div class="dropdown">
+					<button class="dropbtn">About Us ▾</button>
+					<div class="dropdown-content">
+						<a href="about-us.html#whatis" class="nav-dc">What is batyr?</a>
+						<a href="about-us.html#whydo" class="nav-dc">What is our purpose?</a>
+						<a href="about-us.html#whatdo" class="nav-dc">What do we do?</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">Get Involved ▾</button>
+					<div class="dropdown-content">
+						<a href="fundraise.html" class="nav-dc">Fundraise for batyr</a>
+						<a href="fundraise.html#contactus" class="nav-dc">Contact Us</a>
+						<a href="#" class="nav-dc" onclick="mailButton()">hello@batyr.com.au</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section id="therest">
+			<img src="img/logo-white@2x.png" class="logo">
+			<div class="slogan">Giving a voice to the elephant in the room<br>By Edward Lenzner</div>
+			<table class="tn-container">
+				<tr>
+				<td><a href="about-us.html"><div class="thumbnail" id="thumbnail1">
+					<img src="img/thumbnail1.jpeg">
+					<div class="tn-title">About Us</div>
+				</div></a></td>
+				<td><a href="fundraise.html"><div class="thumbnail" id="thumbnai2">
+					<img src="img/thumbnail2.jpeg">
+					<div class="tn-title">Get Involved</div>
+				</div></a></td>
+				</tr>
+			</table>
+		</section>
+	</section>
+</body>
+</html>
